@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.container{
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+.backgroundcol{
+    background-color: black;
+    display: grid;
+    grid-template-rows: 290px 7px 200px 1fr;
+}
+.background{
+    background-color: white;
+}
+.color{
+    color:white;
+}
+.header-align{
+    display: flex;
+    flex-direction: row;
+    font-size: 27px;
+    justify-content: space-between;
+    padding: 24px;
+}
+#guessing{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 25px;
+}
+.center-line-style{
+    position :relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score-card-align { 
+    display: flex;
+    flex-direction: column;
+}
+.again-button-style{
+    padding: 10px;
+    font-size: 20px;
+    color: black; 
+}
+.check-algn{
+    gap: 13px;
+    align-items: center;
+}
+.input-style{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+.align-style{
+    align-items: end;
+}
+.button-align{
+    width: 68px;
+    height: 39px;
+}
+.number-value{
+    position:absolute;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+.guess-my-number-style{
+    color: white;
+    font-size: 46px;
+    display: flex;
+    justify-content: center;
+}
+.header-part-align{
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+.heading-style{
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+}
+.check-button-style{
+    color: black;
+    padding: 4px;
+}
+.button-align:hover{
+    background-color: #c6c3c3;
+}
+.check-button-style:hover{
+    background-color: #c6c3c3;
+}
+.rain{
+    position:absolute;
+    display:flex;
+    z-index:1;
+    padding:0 350px;
+}
+.rain span{
+    position:relative;
+    width:10px;
+    height:10px;
+    background-color: red;
+    margin: 0 30px;
+    border-radius:50%;
+    animation:animate 5s linear infinite;
+    animation-duration:calc(40s/var(--i));
+    transform-origin:bottom;
+}
+@keyframes animate {
+    0%{
+        transform:translateY(0) scale(1);
+    }
+    70%{
+        transform:translateY(719px) scale(1);
+        }
+    100%{
+        transform:translateY(719px) scale(0);
+    }
+    
+}

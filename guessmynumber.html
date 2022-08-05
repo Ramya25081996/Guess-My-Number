@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./guessmynumber.css">
+</head>
+<body>
+    <div class="container backgroundcol">
+        <div class="header-part-align">
+            <div class="header-align color">
+                <div class="button-align background">
+                    <span class="again-button-style" onclick="reload()">Again</span>
+                </div>
+                <span>(Between 1 to 20)</span>
+            </div>
+            <span class="heading-style color">Guess my number</span>
+        </div>
+        <div class="center-line-style background">
+            <div class="number-value background">??</div>
+        </div>
+        <div id="guessing" class="color">Start Guessing....</div>
+        <div class="header-align align-style color">
+            <div class="score-card-align check-algn ">
+                <input type="number" class="input-style">
+                <div class="check-button-style background">Check</div>
+            </div>
+            <div class="score-card-align">
+               <div> <span>Score :</span><span id="score">20</span></div>
+                <span >High Score :<span id="highscore">0</span></span>
+            </div>
+        </div>
+        <div id="rain">
+            <span style="--i:11"></span>
+            <span style="--i:10"></span>
+            <span style="--i:14"></span>
+            <span style="--i:19"></span>
+            <span style="--i:16"></span>
+            <span style="--i:13"></span>
+            <span style="--i:10"></span>
+            <span style="--i:14"></span>
+            <span style="--i:19"></span>
+            <span style="--i:16"></span>
+            <span style="--i:13"></span>
+        </div>
+    </div>
+    <script src="./guessmynumber.js"></script>
+</body>
+</html>
