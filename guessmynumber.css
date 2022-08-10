@@ -12,6 +12,7 @@
     background-color: black;
     display: grid;
     grid-template-rows: 290px 7px 200px 1fr;
+    overflow: hidden;
 }
 .background{
     background-color: white;
@@ -106,15 +107,15 @@
     padding:0 350px;
 }
 .rain span{
-    position:relative;
-    width:10px;
-    height:10px;
-    background-color: red;
+    position: relative;
+    /* width: 10px; */
+    /* height: 10px; */
+    color: red;
     margin: 0 30px;
-    border-radius:50%;
-    animation:animate 5s linear infinite;
-    animation-duration:calc(40s/var(--i));
-    transform-origin:bottom;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    animation-duration: calc(40s/var(--i));
+    transform-origin: bottom;
 }
 @keyframes animate {
     0%{
